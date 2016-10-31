@@ -21,3 +21,8 @@ To see a list of all workspaces use
 ```
 $ tfs workspaces
 ```
+
+Now you have to create a directory and map a part of your collection to that directory:
+```
+$ mkdir "My Project"
+$ tf workfold -map $/"My Project" -workspace:Beta1 "DefaultCollection/My Project"
